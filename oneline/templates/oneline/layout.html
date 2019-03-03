@@ -1,0 +1,90 @@
+<!DOCTYPE html>{% load staticfiles %}
+<html lang="en">
+<head>
+<title>PeterCat</title>
+<meta charset="utf-8">
+<meta name = "format-detection" content = "telephone=no" />
+<link rel="icon" href="{% static 'images/favicon.ico' %}">
+<link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" />
+<link rel="stylesheet" href="{% static 'css/stuck.css' %}">
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<link rel="stylesheet" href="{% static 'css/touchTouch.css' %}">
+<script src="{% static 'js/jquery.js' %}"></script>
+<script src="{% static 'js/jquery-migrate-1.1.1.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script> 
+<script src="{% static 'js/superfish.js' %}"></script>
+<script src="{% static 'js/jquery.equalheights.js' %}"></script>
+<script src="{% static 'js/jquery.mobilemenu.js' %}"></script>
+<script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+<script src="{% static 'js/tmStickUp.js' %}"></script>
+<script src="{% static 'js/jquery.ui.totop.js' %}"></script>
+<script src="{% static 'js/touchTouch.jquery.js' %}"></script>
+
+<script>
+ $(document).ready(function(){
+
+  $().UItoTop({ easingType: 'easeOutQuart' });
+  $('#stuck_container').tmStickUp({});
+  $('.gallery .gall_item').touchTouch();
+
+  }); 
+</script>
+</head>
+
+<body class="page1" id="top">
+<!--==============================
+              header
+=================================-->
+<header>
+<!--==============================
+            Stuck menu
+=================================-->
+  <section id="stuck_container">
+    <div class="container">
+      <div class="row">
+        <div class="grid_12">
+        <h1>
+          <a href="index.html">
+            <img src="{% static 'images/logo.png' %}" alt="Logo alt">
+          </a>
+        </h1>  
+          <div class="navigation">
+            <nav>
+              <ul class="sf-menu">
+               <li class="current"><a href="index.html">Home</a></li>
+               <li><a href="index-3.html">CafeMenu</a></li>
+               <li><a href="index-1.html">PeterCat</a></li>
+               <li><a href="index-2.html">독서모임</a></li>
+             </ul>
+            </nav>        
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> 
+</header>        
+
+
+{% block content %} {% endblock %}
+
+<!--==============================
+              footer
+=================================-->
+<footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="grid_12">  
+          <div class="socials">
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-rss"></a>
+          </div>
+          <div class="copyright"><span class="brand">PeterCat </span> &copy; <span id="copyright-year"></span> | <a href="#">Privacy Policy</a> <div>Website by <a href="http://www.petercat.co.kr/" rel="nofollow">www.petercat.com</a></div>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </footer> 
+  </body>
+  </html>

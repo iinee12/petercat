@@ -1,0 +1,85 @@
+{% extends "oneline/layout.html" %}{% load staticfiles %}
+{% block content %}
+<section class="content">
+    <div class="container">
+      <div class="row">
+        <div class="grid_4">
+          <div class="banner">
+            <div class="gall_block">
+            <img src="{% static 'images/page1_img1.jpg' %}" alt="">
+            <div class="bann_capt ">
+              <div class="maxheight">
+                <img src="{% static 'images/icon1.png' %}" alt="">
+                <div class="bann_title">About <br> PeterCat</div>
+                <a href="#">more</a>
+              </div>
+            </div>
+          </div>
+         </div>
+        </div>
+        <div class="grid_4">
+          <div class="banner">
+            <div class="gall_block">
+            <div class="bann_capt  bn__1">
+              <div class="maxheight">
+                <img src="{% static 'images/icon2.png' %}" alt="">
+                <div class="bann_title">독서모임</div>
+                <a href="#">more</a>
+              </div>
+            </div>
+            <img src="{% static 'images/page1_img2.jpg' %}" alt="">
+          </div>
+          </div>
+        </div>
+        <div class="grid_4">
+          <div class="banner ">
+            <div class="gall_block">
+            <img src="{% static 'images/page1_img3.jpg' %}" alt="">
+            <div class="bann_capt  bn__2">
+              <div class="maxheight">
+                <img src="images/icon3.png" alt="">
+                <div class="bann_title">Dessert <br> &amp; Drink</div>
+                <a href="#">more</a>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="grid_4">
+          <h2>Welcome</h2>
+          <blockquote class="bq1">
+            <img src="{% static 'images/page1_img7.jpg' %}" alt="" class="img_inner fleft noresize">
+            <div class="extra_wrapper">
+              <div class="bq_title color1">BookCafe PeterCat</div>
+              Sivamus at magna non nuncer tristique rhoncus. Aliquame nibh ante, egestas id dictumertolom  commodo. Praesent faucib mal.
+              <a href="#"><span class="fa fa-chevron-right"></span>more testimonials</a>
+            </div>
+          </blockquote>
+        </div>
+        <div class="grid_4">
+          <h2>공지사항</h2>
+          <div class="block2">
+            <time datetime="2019-03-02">02<br>Feb</time>
+            <div class="extra_wrapper">
+              <div class="text1"><a href="#">Vivamus at magna non nunc </a></div>Rehoncus. Aliquam nibh antegestas id dictum a, commodo. Praesenterto faucibus malesuada faucibus
+            </div>
+          </div>
+          <div class="block2">
+            <time datetime="2018-12-04">15<br>Dec</time>
+            <div class="extra_wrapper">
+              <div class="text1"><a href="#">Tivamus at magna non nunc </a></div>Rehoncus. Aliquam nibh antegestas id dictum a, commodo. Praesenterto faucibus malesuada faucibu
+            </div>
+          </div>
+        </div>
+        <div class="grid_4">
+          <h2>Opening Hours</h2>
+          <ul class="shed">
+            <li><i class="fa fa-clock-o"></i> 12:00 - 22:00</li>
+            <li> <i class="fa fa-phone"></i>  070-4125-0099</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}
