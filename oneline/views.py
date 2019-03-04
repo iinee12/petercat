@@ -5,3 +5,9 @@ from django.shortcuts import render
 def index(request):
     
     return render(request, "oneline/index.html")
+
+
+
+def cafemenu(request):
+    
+    return render(request, "oneline/cafemenu.html")
