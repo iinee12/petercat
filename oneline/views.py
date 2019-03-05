@@ -11,3 +11,12 @@ def index(request):
 def cafemenu(request):
     
     return render(request, "oneline/cafemenu.html")
+
+
+def aboutpetercat(request):
+    
+    return render(request, "oneline/aboutpetercat.html")
+
+def booksalon(request):
+    
+    return render(request, "oneline/booksalon.html")
